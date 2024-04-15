@@ -1,9 +1,9 @@
 export default function About() {
     return (
         <>
-            <div className="w-full h-[500px] ">
+            <div className="w-full h-[500px] bg-mainGrey">
                 <div>
-                    <h1>Hey, I'm Wilfred. A front-end developer living in Melbourne, Australia. </h1>
+                    <h1 className="bg-">Hey, I'm Wilfred. A web developer from Melbourne, Australia. </h1>
                 </div>
             </div>
         </>
