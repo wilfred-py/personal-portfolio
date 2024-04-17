@@ -1,12 +1,18 @@
-import About from "./components/About";
+import Intro from "@/components/Intro";
+import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 
 export default function Home() {
     return (
         <main>
-            <section className="" id="#aboutme">
-                <About />
+            <Navbar />
+            <section className="" id="#intro">
+                <Intro />
             </section>
-            <section className="" id="#projects"></section>
+
+            <section className="" id="#projects">
+                <Projects />
+            </section>
 
             <section className="" id="#contact"></section>
         </main>
