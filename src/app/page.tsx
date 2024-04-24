@@ -10,9 +10,9 @@ export default function Home() {
                 <Intro />
             </section>
 
-            <section className="" id="#projects">
+            {/* <section className="" id="#projects">
                 <Projects />
-            </section>
+            </section> */}
 
             <section className="" id="#contact"></section>
         </main>
