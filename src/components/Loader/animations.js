@@ -57,7 +57,8 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
         .to(
             progressNumberRef.current,
             {
-                x: "100vw",
+                xPercent: -100,
+                left: "100%",
                 duration: 5,
                 ease: "power3.inOut",
             },
