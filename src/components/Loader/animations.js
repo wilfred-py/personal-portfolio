@@ -3,41 +3,49 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
-export const introAnimation = (wordGroupsRef, overlayRef) => {
+export const introAnimation = (wordGroupsRef, overlayRef, wordsRef) => {
     const tl = gsap.timeline();
 
     tl.to(wordGroupsRef.current, {
         yPercent: -80,
         duration: 5,
         ease: "power3.inOut",
-    }).fromTo(
-        overlayRef.current,
-        {
-            background: `linear-gradient(
+    })
+        .fromTo(
+            overlayRef.current,
+            {
+                background: `linear-gradient(
                 to bottom,
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.9) 45%,
+                rgba(255, 255, 255, 0.85),
+                rgba(255, 255, 255, 0.85) 45%,
                 transparent,
                 transparent 48%,
                 transparent,
-                rgba(255, 255, 255, 0.9) 50%,
-                rgba(255, 255, 255, 0.9)`,
-        },
-        {
-            background: `linear-gradient(
+                rgba(255, 255, 255, 0.85) 50%,
+                rgba(255, 255, 255, 0.85)`,
+            },
+            {
+                background: `linear-gradient(
             to bottom,
-            rgba(255, 255, 255, 0.9),
-            rgba(255, 255, 255, 0.9) 42%,
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85) 45%,
             transparent,
             transparent 48%,
             transparent,
-            rgba(255, 255, 255, 0.9) 54%,
-            rgba(255, 255, 255, 0.9)`,
-            duration: 1,
-            ease: "power4.in",
-        },
-        "-=2"
-    );
+            rgba(255, 255, 255, 0.85) 55%,
+            rgba(255, 255, 255, 0.85)`,
+                duration: 1,
+                ease: "power4.in",
+            },
+            "-=2"
+        )
+        .to(
+            wordsRef.current,
+            {
+                height: `45rem`,
+            },
+            "<"
+        );
 
     return tl;
 };

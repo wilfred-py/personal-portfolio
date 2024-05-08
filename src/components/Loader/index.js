@@ -11,10 +11,12 @@ const Loader = ({ timeline }) => {
     const progressRef = useRef(null);
     const progressNumberRef = useRef(null);
     const wordGroupsRef = useRef(null);
+    const wordsRef = useRef(null);
     const overlayRef = useRef(null);
 
     useGSAP(() => {
-        timeline && timeline.add(introAnimation(wordGroupsRef, overlayRef)).add(progressAnimation(progressRef, progressNumberRef), "<");
+        timeline &&
+            timeline.add(introAnimation(wordGroupsRef, overlayRef, wordsRef)).add(progressAnimation(progressRef, progressNumberRef), "<");
         // .add(collapseWords(loaderRef), "-=2");
     }, [timeline]);
 
@@ -28,7 +30,7 @@ const Loader = ({ timeline }) => {
             </div>
 
             <div className={styles.loader} ref={loaderRef}>
-                <div className={styles.loader__words}>
+                <div className={styles.loader__words} ref={wordsRef}>
                     <div className={styles.loader__overlay} ref={overlayRef}></div>
                     <div ref={wordGroupsRef} className={styles.loader__wordsGroup}>
                         {words.map((word, index) => {

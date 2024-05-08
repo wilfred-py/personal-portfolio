@@ -22,12 +22,6 @@
         overflow: hidden;
     }
 
-    &__words {
-        position: relative;
-        overflow: hidden;
-        height: 42rem;
-    }
-
     &__overlay {
         position: absolute;
         inset: 0;
@@ -45,9 +39,16 @@
         );
     }
 
+    &__words {
+        position: relative;
+        overflow: hidden;
+        height: 42rem;
+    }
+
     &__word {
         display: block;
         font-size: 1.4rem;
+        // line-height: 1.4;
     }
 
     &__commandLetters {
