@@ -2,7 +2,7 @@
 
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
-import Preloader from "@/components/Preloader";
+import HelloWorld from "@/components/HelloWorld";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import { useLayoutEffect, useState } from "react";
@@ -27,9 +27,9 @@ export default function Home() {
         <main>
             {/* {loaderFinished ? <Hero /> : <Loader timeline={timeline} />} */}
 
-            <Loader timeline={timeline} />
-
-            {/* <Preloader /> */}
+            <HelloWorld timeline={timeline} />
+            {/* <Loader timeline={timeline} />
+             */}
 
             {/* <section className="" id="#intro">
                 <Intro />

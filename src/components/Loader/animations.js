@@ -28,11 +28,11 @@ export const introAnimation = (wordGroupsRef, overlayRef, wordsRef) => {
                 background: `linear-gradient(
             to bottom,
             rgba(255, 255, 255, 0.85),
-            rgba(255, 255, 255, 0.85) 45%,
+            rgba(255, 255, 255, 0.85) 44%,
             transparent,
             transparent 48%,
             transparent,
-            rgba(255, 255, 255, 0.85) 55%,
+            rgba(255, 255, 255, 0.85) 56%,
             rgba(255, 255, 255, 0.85)`,
                 duration: 1,
                 ease: "power4.in",
