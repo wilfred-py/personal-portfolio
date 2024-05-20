@@ -17,9 +17,10 @@ const Loader = ({ timeline }) => {
     useGSAP(() => {
         timeline &&
             timeline
-                .add(introAnimation(wordGroupsRef, overlayRef, wordsRef), 0.25)
-                .add(progressAnimation(progressRef, progressNumberRef), "<")
-                .add(wipeUpAnimation(wipeUpRef), "-=2");
+                // .add(introAnimation(wordGroupsRef, overlayRef, wordsRef), 0.25)
+                // .add(progressAnimation(progressRef, progressNumberRef), "<")
+                // .add(wipeUpAnimation(wipeUpRef), "-=2");
+                .add(wipeUpAnimation(wipeUpRef));
         // .add(collapseWords(loaderRef), "-=2");
     }, [timeline]);
 
