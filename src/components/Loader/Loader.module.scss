@@ -51,11 +51,6 @@
         // line-height: 1.4;
     }
 
-    &__commandLetters {
-        display: block;
-        font-size: 1.4rem;
-    }
-
     &__progressWrapper {
         position: absolute;
         bottom: 0;
@@ -83,5 +78,16 @@
         color: white;
         font-size: 3.2rem;
         margin-left: -2%;
+    }
+
+    &__wipeUpWrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        height: 5vh;
+        width: 100%;
+        transform: scaleY(1);
+        // background-color: black;
     }
 }

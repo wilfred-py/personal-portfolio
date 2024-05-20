@@ -8,14 +8,8 @@ export default function HelloWorld({ timeline }) {
     const wordsRef = useRef(null);
 
     useGSAP(() => {
-        const words = "print(`Hello World`)";
-
         timeline && timeline.add(typingAnimation(wordsRef, words)).add(eraseTypingAnimation(wordsRef, words), ">=1");
     }, [timeline]);
 
-    return (
-        <div className={styles.preloader}>
-            <span ref={wordsRef}></span>
-        </div>
-    );
+    return <div className={styles.preloader}></div>;
 }

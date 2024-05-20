@@ -74,11 +74,48 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
             "<"
         )
         .to(progressNumberRef.current, {
-            y: 24,
+            y: -50,
             autoAlpha: 0,
             duration: 3,
             ease: "expo.inOut",
         });
+
+    return tl;
+};
+
+export const wipeUpAnimation = (wipeUpRef) => {
+    const tl = gsap.timeline();
+
+    tl.to(wipeUpRef.current, {
+        top: 0,
+        height: "100%",
+        zIndex: 5,
+        scaleY: 1,
+        backgroundColor: "black",
+        duration: 1.75,
+        ease: "power4.out",
+    }).to(
+        wipeUpRef.current,
+        {
+            top: 0,
+            height: "0%",
+
+            duration: 4,
+            ease: "power4.out",
+        },
+        "-=1"
+    );
+    // .to(
+    //     wipeUpRef.current,
+    //     {
+    //         top: 0,
+    //         height: 0,
+    //         zIndex: 0,
+    //         duration: 0.75,
+    //     },
+    //     "-=1"
+    // );
+    // .to(wipeUpRef.current, { opacity: 0 });
 
     return tl;
 };
