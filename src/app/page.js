@@ -26,21 +26,9 @@ export default function Home() {
 
     return (
         <main>
-            {/* {loaderFinished ? <Hero /> : <Loader timeline={timeline} />} */}
+            {loaderFinished ? <Hero /> : <Loader timeline={timeline} />}
 
-            {/* <HelloWorld timeline={timeline} /> */}
-
-            <Loader timeline={timeline} />
-
-            {/* <section className="" id="#intro">
-                <Intro />
-            </section> */}
-
-            {/* <section className="" id="#projects">
-                <Projects />
-            </section> */}
-
-            <section className="" id="#contact"></section>
+            {/* <Loader timeline={timeline} /> */}
         </main>
     );
 }
