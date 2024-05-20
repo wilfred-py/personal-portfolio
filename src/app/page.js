@@ -17,6 +17,7 @@ export default function Home() {
             const tl = gsap.timeline({
                 onComplete: () => setLoaderFinished(true),
             });
+
             setTimeline(tl);
         });
 
@@ -27,9 +28,9 @@ export default function Home() {
         <main>
             {/* {loaderFinished ? <Hero /> : <Loader timeline={timeline} />} */}
 
-            <HelloWorld timeline={timeline} />
-            {/* <Loader timeline={timeline} />
-             */}
+            {/* <HelloWorld timeline={timeline} /> */}
+
+            <Loader timeline={timeline} />
 
             {/* <section className="" id="#intro">
                 <Intro />
