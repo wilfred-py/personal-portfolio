@@ -12,14 +12,12 @@ const Loader = ({ timeline }) => {
     const wordGroupsRef = useRef(null);
     const wordsRef = useRef(null);
     const overlayRef = useRef(null);
-    const wipeUpRef = useRef(null);
 
     useGSAP(() => {
         timeline &&
             timeline
                 .add(introAnimation(wordGroupsRef, overlayRef, wordsRef), 0.25)
                 .add(progressAnimation(progressRef, progressNumberRef), "<");
-        // .add(wipeUpAnimation(wipeUpRef), "-=1.5");
     }, [timeline]);
 
     return (
@@ -31,8 +29,6 @@ const Loader = ({ timeline }) => {
                         0
                     </span>
                 </div>
-
-                <div className={styles.loader__wipeUpWrapper} ref={wipeUpRef}></div>
 
                 <div className={styles.loader} ref={loaderRef}>
                     <div className={styles.loader__words} ref={wordsRef}>
