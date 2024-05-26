@@ -100,7 +100,7 @@ export const wipeUpAnimation = (wipeUpRef) => {
             top: 0,
             height: "0%",
 
-            duration: 4,
+            duration: 2.25,
             ease: "power4.out",
         },
         "-=1"
