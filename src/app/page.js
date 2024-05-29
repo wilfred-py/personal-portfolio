@@ -29,6 +29,8 @@ export default function Home() {
             {/* {loaderFinished ? <Hero /> : <Loader timeline={timeline} />} */}
 
             <Hero />
+
+            {/* <Loader timeline={timeline} /> */}
         </main>
     );
 }

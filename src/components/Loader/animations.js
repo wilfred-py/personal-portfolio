@@ -1,7 +1,4 @@
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
 
 export const introAnimation = (wordGroupsRef, overlayRef, wordsRef) => {
     const tl = gsap.timeline();
