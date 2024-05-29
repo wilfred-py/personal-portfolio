@@ -9,7 +9,7 @@
         "leftPadding name name rightPadding"
         "leftPadding socials socials rightPadding";
     overflow: hidden;
-    background-color: #f9f7f7;
+    background-color: #ccbaa5;
 
     &__nav {
         grid-area: rightNav;
@@ -32,6 +32,10 @@
                     text-decoration: none;
                     color: inherit;
                     font-weight: 650;
+
+                    svg:hover {
+                        color: blue;
+                    }
                 }
             }
         }
@@ -46,6 +50,7 @@
 
         h2 {
             font-size: 2rem;
+            margin-left: 0.2rem;
         }
     }
 
