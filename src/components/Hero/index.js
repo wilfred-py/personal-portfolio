@@ -28,7 +28,7 @@ export default function Hero() {
         heroTimeline
             .add(setInitialStates())
             .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
-            .add(nameIntro(nameRef))
+            .add(nameIntro(nameRef), "-=1")
             .add(navIntro(navRef), "-=0.5")
             .add(socialsIntro(socialsRef), "<");
     }, []);
