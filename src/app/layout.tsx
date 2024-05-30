@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <script src="https://kit.fontawesome.com/4b86cbc595.js" crossorigin="anonymous"></script>
+            </head>
             <body className={openSans.className}>{children}</body>
         </html>
     );

@@ -18,9 +18,13 @@ export default function Home() {
     requestAnimationFrame(raf);
 
     return (
-        <main className="overflow-hidden">
-            <Hero />
-            <Hero />
-        </main>
+        <>
+            <main className="">
+                <section>
+                    <Hero />
+                </section>
+                <section></section>
+            </main>
+        </>
     );
 }
