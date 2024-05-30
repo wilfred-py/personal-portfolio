@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 import "./globals.css";
 
@@ -17,9 +21,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head>
-                <script src="https://kit.fontawesome.com/4b86cbc595.js" crossorigin="anonymous"></script>
-            </head>
             <body className={openSans.className}>{children}</body>
         </html>
     );
