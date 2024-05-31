@@ -4,7 +4,8 @@ import { nameIntro, navIntro, socialsIntro, preloaderAnimation } from "./animati
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
     const preloaderTextRef = useRef(null);
@@ -70,7 +71,7 @@ export default function Hero() {
                     <ul>
                         <li>
                             <a href="https://github.com/wilfred-py" target="_blank">
-                                <FontAwesomeIcon icon={faGithub} bounce />
+                                <FontAwesomeIcon icon={faGithub} bounce size="xl" />
                                 {/* <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width={24}
@@ -90,47 +91,12 @@ export default function Hero() {
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/wilfredchen1/" target="_blank">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
-                                >
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                                    <path d="M8 11l0 5" />
-                                    <path d="M8 8l0 .01" />
-                                    <path d="M12 16l0 -5" />
-                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                                </svg>
+                                <FontAwesomeIcon icon={faLinkedin} bounce size="xl" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-file-cv"
-                                >
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-                                    <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
-                                    <path d="M13 11l1.5 6l1.5 -6" />
-                                </svg>
+                                <FontAwesomeIcon icon={faFilePdf} bounce size="xl" />
                             </a>
                         </li>
                     </ul>
