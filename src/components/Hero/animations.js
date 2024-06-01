@@ -85,3 +85,13 @@ export const socialsIntro = (socialsRef) => {
     );
     return tl;
 };
+
+export const backgroundImageAnimation = (backgroundImageRef) => {
+    const tl = gsap.timeline();
+
+    tl.to(backgroundImageRef, {
+        scale: 2,
+    });
+
+    return tl;
+};
