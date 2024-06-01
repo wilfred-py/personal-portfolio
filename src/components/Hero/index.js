@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import styles from "./Hero.module.scss";
-import { nameIntro, navIntro, socialsIntro, preloaderAnimation } from "./animations";
+import { nameIntro, navIntro, socialsIntro, preloaderAnimation, backgroundImageAnimation } from "./animations";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +16,7 @@ export default function Hero() {
     const socialsRef = useRef(null);
     const preloaderRef = useRef(null);
     const preloaderBackgroundRef = useRef(null);
+    const backgroundImageRef = useRef(null);
 
     useGSAP(() => {
         const heroTimeline = gsap.timeline();
@@ -32,10 +33,11 @@ export default function Hero() {
 
         heroTimeline
             .add(setInitialStates())
-            // .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
+            .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
             .add(nameIntro(nameRef), "-=1")
             .add(navIntro(navRef), "-=0.5")
-            .add(socialsIntro(socialsRef), "<");
+            .add(socialsIntro(socialsRef), "<")
+            .add(backgroundImageAnimation(backgroundImageRef), "+=1");
     }, []);
 
     return (
@@ -46,6 +48,7 @@ export default function Hero() {
                     alt="Picture of mountain ranges in Dolomites, Italy"
                     className={styles.hero__backgroundImage}
                     priority={true}
+                    ref={backgroundImageRef}
                 />
 
                 <div className={styles.hero__nav} ref={navRef}>
