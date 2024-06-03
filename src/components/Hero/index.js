@@ -83,17 +83,17 @@ export default function Hero() {
                     <ul>
                         <li>
                             <a href="https://github.com/wilfred-py" target="_blank">
-                                <FontAwesomeIcon icon={faGithub} bounce size="xl" />
+                                <FontAwesomeIcon icon={faGithub} size="xl" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/wilfredchen1/" target="_blank">
-                                <FontAwesomeIcon icon={faLinkedin} bounce size="xl" />
+                                <FontAwesomeIcon icon={faLinkedin} size="xl" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <FontAwesomeIcon icon={faFilePdf} bounce size="xl" />
+                                <FontAwesomeIcon icon={faFilePdf} size="xl" />
                             </a>
                         </li>
                     </ul>
