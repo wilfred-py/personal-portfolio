@@ -34,10 +34,10 @@ export default function Hero() {
         heroTimeline
             .add(setInitialStates())
             .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
-            .add(nameIntro(nameRef), "-=1")
-            .add(navIntro(navRef), "-=0.5")
-            .add(socialsIntro(socialsRef), "<")
-            .add(backgroundImageAnimation(backgroundImageRef), "+=1");
+            .add(backgroundImageAnimation(backgroundImageRef), "-=1.7")
+            .add(nameIntro(nameRef), "-=0.72")
+            .add(socialsIntro(socialsRef))
+            .add(navIntro(navRef), "<");
     }, []);
 
     return (

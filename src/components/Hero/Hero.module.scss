@@ -13,7 +13,8 @@
 
     &__backgroundImage {
         grid-area: 1 / 1 / -1 / -1;
-        transform: scale(1);
+        transform: scale(3);
+        top: 95%;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -69,12 +70,6 @@
                 margin-bottom: 0.3rem;
             }
         }
-    }
-
-    &__wipeUp {
-        position: fixed;
-        inset: 0;
-        background-color: black;
     }
 
     .preloader {
