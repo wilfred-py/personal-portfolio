@@ -34,7 +34,7 @@ export default function Hero() {
         heroTimeline
             .add(setInitialStates())
             .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
-            .add(backgroundImageAnimation(backgroundImageRef), "-=1.7")
+            .add(backgroundImageAnimation(backgroundImageRef), "-=1.6")
             .add(nameIntro(nameRef), "-=0.72")
             .add(socialsIntro(socialsRef))
             .add(navIntro(navRef), "<");
