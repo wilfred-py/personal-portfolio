@@ -67,7 +67,7 @@ export default function Hero() {
 
                 <div className={styles.preloader} ref={preloaderRef}>
                     <p className={styles.preloader__text} ref={preloaderTextRef}>
-                        <span className={styles.preloader__mainText}>Wilfred Chen</span>
+                        <span className={styles.preloader__mainText}>WILFRED CHEN</span>
                         <span className={styles.preloader__subText}>Portfolio 2024</span>
                     </p>
 
@@ -75,8 +75,8 @@ export default function Hero() {
                 </div>
 
                 <div className={styles.hero__name} ref={nameRef}>
-                    <h1>Wilfred Chen</h1>
-                    <h2>Web Developer</h2>
+                    <h1>WILFRED CHEN</h1>
+                    <h2>WEB DEVELOPER</h2>
                 </div>
 
                 <div className={styles.hero__socials} ref={socialsRef}>

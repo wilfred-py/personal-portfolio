@@ -91,7 +91,8 @@ export const backgroundImageAnimation = (backgroundImageRef) => {
 
     tl.to(backgroundImageRef.current, {
         scale: 1,
-        duration: 1.4,
+        opacity: 0.9,
+        duration: 1.2,
         ease: "power4.inout",
     });
 
