@@ -75,7 +75,7 @@ export default function Hero() {
                 </div>
 
                 <div className={styles.hero__name} ref={nameRef}>
-                    <h1>WILFRED CHEN</h1>
+                    <h1 className="box">WILFRED CHEN</h1>
                     <h2>WEB DEVELOPER</h2>
                 </div>
 

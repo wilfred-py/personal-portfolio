@@ -29,7 +29,8 @@
         "src/components/Loader/index.js",
         "src/components/Intro.s",
         "src/app/layout.js",
-        "src/app/page.js"
+        "src/app/page.js",
+        "src/components/Project/ind"
     ],
     "exclude": ["node_modules"]
 }
