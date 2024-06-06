@@ -34,10 +34,10 @@ export default function Hero() {
         heroTimeline
             .add(setInitialStates())
             .add(preloaderAnimation(preloaderTextRef, preloaderBackgroundRef))
-            .add(nameIntro(nameRef), "-=1")
-            .add(navIntro(navRef), "-=0.5")
-            .add(socialsIntro(socialsRef), "<")
-            .add(backgroundImageAnimation(backgroundImageRef), "+=1");
+            .add(backgroundImageAnimation(backgroundImageRef), "-=1.6")
+            .add(nameIntro(nameRef), "-=0.72")
+            .add(socialsIntro(socialsRef))
+            .add(navIntro(navRef), "<");
     }, []);
 
     return (
@@ -67,7 +67,7 @@ export default function Hero() {
 
                 <div className={styles.preloader} ref={preloaderRef}>
                     <p className={styles.preloader__text} ref={preloaderTextRef}>
-                        <span className={styles.preloader__mainText}>Wilfred Chen</span>
+                        <span className={styles.preloader__mainText}>WILFRED CHEN</span>
                         <span className={styles.preloader__subText}>Portfolio 2024</span>
                     </p>
 
@@ -75,25 +75,25 @@ export default function Hero() {
                 </div>
 
                 <div className={styles.hero__name} ref={nameRef}>
-                    <h1>Wilfred Chen</h1>
-                    <h2>Web Developer</h2>
+                    <h1 className="box">WILFRED CHEN</h1>
+                    <h2>WEB DEVELOPER</h2>
                 </div>
 
                 <div className={styles.hero__socials} ref={socialsRef}>
                     <ul>
                         <li>
                             <a href="https://github.com/wilfred-py" target="_blank">
-                                <FontAwesomeIcon icon={faGithub} bounce size="xl" />
+                                <FontAwesomeIcon icon={faGithub} size="xl" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/wilfredchen1/" target="_blank">
-                                <FontAwesomeIcon icon={faLinkedin} bounce size="xl" />
+                                <FontAwesomeIcon icon={faLinkedin} size="xl" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <FontAwesomeIcon icon={faFilePdf} bounce size="xl" />
+                                <FontAwesomeIcon icon={faFilePdf} size="xl" />
                             </a>
                         </li>
                     </ul>

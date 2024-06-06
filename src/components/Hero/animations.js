@@ -89,8 +89,11 @@ export const socialsIntro = (socialsRef) => {
 export const backgroundImageAnimation = (backgroundImageRef) => {
     const tl = gsap.timeline();
 
-    tl.to(backgroundImageRef, {
-        scale: 2,
+    tl.to(backgroundImageRef.current, {
+        scale: 1,
+        opacity: 0.9,
+        duration: 1.2,
+        ease: "power4.inout",
     });
 
     return tl;
