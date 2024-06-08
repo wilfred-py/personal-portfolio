@@ -1,0 +1,23 @@
+.projects {
+    height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: 1.5fr 19fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+        "leftpadding nav nav rightPadding"
+        "leftpadding main main rightPadding";
+
+    overflow-x: hidden;
+    background-color: #29272b;
+    border: 1px red solid;
+
+    &__main {
+        grid-area: nav;
+    }
+
+    &__title {
+        color: yellow;
+        border: 1px blue solid;
+    }
+}
