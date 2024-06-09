@@ -26,12 +26,6 @@
     background-color: #000000;
     border: 1px red solid;
 
-    &__main {
-        display: grid;
-        grid-area: number;
-        border: 1px solid yellow;
-    }
-
     &__suburbiq {
         display: grid;
         grid-area: projectDescription;
@@ -49,12 +43,21 @@
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin: 0px 0.5rem;
+            }
+        }
     }
 
     &__screenshots {
+        height: 100%;
         width: 100%;
-        object-fit: cover;
-        margin: 1rem 0;
+        object-fit: contain;
     }
 
     &__title {
@@ -68,8 +71,9 @@
 
     &__number {
         color: yellow;
-        font-size: 20rem;
-        grid-row: 2 / 4;
+        opacity: 0.65;
+        font-size: 60rem;
+        grid-row: 1 / 4;
         grid-column: 2 / 3;
     }
 }
