@@ -6,6 +6,8 @@ import transitionBlockImage from "@/public/images/transitionBlock.jpg";
 import suburbiqSearch from "@/public/images/suburbiqSearch.png";
 import suburbiqDashboard from "@/public/images/suburbiqDashboard.png";
 import searchGif from "@/public/images/suburbiqSearch.gif";
+import suburbiqHousing from "@/public/images/suburbiqHousing.png";
+import Link from "next/link";
 
 export default function Projects() {
     // useGSAP(() => {
@@ -42,29 +44,57 @@ export default function Projects() {
                 </div>
                 <div className={styles.projects__number}>1</div>
                 <div className={styles.projects__suburbiq}>
-                    <h2>Suburb IQ</h2>
-                    <p>A web app visualising demographic trends across Australian suburbs</p>
-                    <p>Current users: 6</p>
-                    <p>
+                    <div className={styles.projects__suburbiq__title}>
+                        <h2>Suburb IQ</h2>
+                        <p>
+                            {" "}
+                            <a href="https://www.suburbiq.com" target="_blank">
+                                https://www.suburbiq.com
+                            </a>
+                        </p>
+                    </div>
+                    <div className={styles.projects__suburbiq__description}>
+                        <p>A web app visualising demographic trends across Australian suburbs.</p>
                         Technologies used:
                         <ul>
                             <li>NextJS</li>
-                            <li>HTML</li>
-                            <li>Tailwind CSS</li>
                             <li>Typescript</li>
-                            <li>PostgreSQL</li>
+                            <li>Tailwind CSS</li>
+                            <li>Python</li>
+                            <li>Supabase</li>
+                            <li>Vercel</li>
                         </ul>
-                    </p>
-                    <div className={styles.projects__screenshots}>
-                        <Image
-                            src={suburbiqDashboard}
-                            alt="Suburb IQ Dashboard Page"
-                            priority={true}
-                            className={styles.projects__screenshots}
-                        />
-                        <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} />
+                    </div>
 
-                        <Image src={suburbiqSearch} alt="Suburb IQ Search Page" priority={true} className={styles.projects__screenshots} />
+                    <div className={styles.projects__screenshots}>
+                        {/* <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} /> */}
+
+                        <a href="https://www.suburbiq.com" target="_blank">
+                            <Image
+                                src={suburbiqDashboard}
+                                alt="Suburb IQ Dashboard Page"
+                                priority={true}
+                                className={styles.projects__screenshots__a}
+                            />
+                        </a>
+
+                        <a href="https://www.suburbiq.com" target="_blank">
+                            <Image
+                                src={searchGif}
+                                alt="Suburb IQ Search Page"
+                                priority={true}
+                                className={styles.projects__screenshots__b}
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <Link href={"/projects/suburbiq"} className={styles.projects__suburbiq__actionButtons}>
+                            READ MORE
+                        </Link>
+
+                        <Link href={"https://www.suburbiq.com"} className={styles.projects__suburbiq__actionButtons} target="_blank">
+                            VISIT{" "}
+                        </Link>
                     </div>
                 </div>
             </div>
