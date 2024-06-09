@@ -64,7 +64,7 @@ export default function Projects() {
                         />
                         <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} />
 
-                        {/* <Image src={suburbiqSearch} alt="Suburb IQ Search Page" priority={true} className={styles.projects__screenshots} /> */}
+                        <Image src={suburbiqSearch} alt="Suburb IQ Search Page" priority={true} className={styles.projects__screenshots} />
                     </div>
                 </div>
             </div>

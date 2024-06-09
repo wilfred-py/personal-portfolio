@@ -31,6 +31,7 @@
         grid-area: projectDescription;
         color: white;
         margin-top: 2rem;
+        z-index: 2;
 
         h2 {
             font-size: 2rem;
@@ -70,10 +71,12 @@
     }
 
     &__number {
+        display: grid;
+        grid-area: number;
         color: yellow;
         opacity: 0.65;
-        font-size: 60rem;
-        grid-row: 1 / 4;
-        grid-column: 2 / 3;
+        font-size: 40rem;
+        font-weight: 650;
+        z-index: 1;
     }
 }
