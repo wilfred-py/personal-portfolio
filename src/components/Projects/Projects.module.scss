@@ -27,44 +27,83 @@
     border: 1px red solid;
 
     &__suburbiq {
+        width: 100%;
+        height: 100%;
         display: grid;
         grid-area: projectDescription;
-        color: white;
-        margin-top: 2rem;
+        margin-top: 1rem;
         z-index: 2;
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
+        border: 1px green solid;
+
+        &__title {
+            h2 {
+                color: #cbcbc4;
+                font-size: 2rem;
+                font-weight: 800;
+            }
+
+            p {
+                color: #cecec5;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
         }
 
-        p {
+        &__description {
+            p {
+                color: #cecec5;
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 1rem 0rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                color: #cecec5;
+
+                li {
+                    margin: 0px 0.5rem;
+                }
+            }
+        }
+
+        &__actionButtons {
+            max-width: 7rem;
+            text-align: center;
+            color: #cecec5;
             font-size: 1rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            border: 1px solid #cecec5;
+            border-radius: 0.5rem;
+            padding: 0.25rem;
         }
 
-        ul {
-            display: flex;
-            flex-direction: row;
-
-            li {
-                margin: 0px 0.5rem;
-            }
+        &__actionButtons:hover {
+            background-color: white;
+            color: black;
         }
     }
 
     &__screenshots {
         height: 100%;
-        width: 100%;
-        object-fit: contain;
+        max-width: 80%;
+        overflow: hidden;
+
+        a {
+            height: 10%;
+        }
+        b {
+            height: 80%;
+        }
     }
 
     &__title {
         border: 1px blue solid;
         grid-area: header;
-        margin-top: 6rem;
+        margin-top: 1rem;
         color: white;
         font-size: 3rem;
         font-weight: 700;
@@ -75,8 +114,10 @@
         grid-area: number;
         color: yellow;
         opacity: 0.65;
-        font-size: 40rem;
+        font-size: 14rem;
         font-weight: 650;
         z-index: 1;
+
+        border: 1px orange solid;
     }
 }
