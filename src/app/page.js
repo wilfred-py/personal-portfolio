@@ -21,9 +21,9 @@ export default function Home() {
     return (
         <>
             <main>
-                <section>
+                {/* <section>
                     <Hero />
-                </section>
+                </section> */}
                 <section>
                     <Projects />
                 </section>
