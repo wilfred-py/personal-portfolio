@@ -17,8 +17,8 @@
     "@gsap/react": "^2.1.0",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
-    "framer-motion": "^11.0.25",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.10",
     "gsap": "^3.12.5",
     "lenis": "^1.0.44",
     "lucide-react": "^0.368.0",
@@ -26,7 +26,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.75.0",
-    "tailwind-merge": "^2.2.2",
+    "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

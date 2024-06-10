@@ -19,7 +19,7 @@
     grid-template-areas:
         "leftpadding header header hambugerMenu"
         "leftpadding number projectDescription rightPadding"
-        "leftpadding number projectScreenshots rightPadding"
+        "leftpadding number projectDescription rightPadding"
         "leftpadding footer footer rightPadding";
 
     overflow: hidden;
@@ -48,6 +48,10 @@
                 font-size: 1rem;
                 font-weight: 600;
                 margin-bottom: 0.5rem;
+            }
+
+            a:hover {
+                text-decoration: underline white;
             }
         }
 
@@ -89,14 +93,19 @@
 
     &__screenshots {
         height: 100%;
-        max-width: 80%;
+        max-width: 90%;
         overflow: hidden;
+        border-radius: 1.2rem;
 
-        a {
-            height: 10%;
-        }
-        b {
+        &__dashboard {
             height: 80%;
+            margin-bottom: 10rem;
+            object-fit: cover;
+        }
+
+        &__search {
+            height: 80%;
+            object-fit: cover;
         }
     }
 
@@ -117,7 +126,5 @@
         font-size: 14rem;
         font-weight: 650;
         z-index: 1;
-
-        border: 1px orange solid;
     }
 }
