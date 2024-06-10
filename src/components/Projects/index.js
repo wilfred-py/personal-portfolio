@@ -74,7 +74,7 @@ export default function Projects() {
                                 src={suburbiqDashboard}
                                 alt="Suburb IQ Dashboard Page"
                                 priority={true}
-                                className={styles.projects__screenshots__a}
+                                className={styles.projects__screenshots__dashboard}
                             />
                         </a>
 
@@ -83,7 +83,7 @@ export default function Projects() {
                                 src={searchGif}
                                 alt="Suburb IQ Search Page"
                                 priority={true}
-                                className={styles.projects__screenshots__b}
+                                className={styles.projects__screenshots__search}
                             />
                         </a>
                     </div>
