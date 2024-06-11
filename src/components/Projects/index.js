@@ -93,15 +93,6 @@ export default function Projects() {
                             />
                         </a> */}
                     </div>
-                    <div>
-                        <Link href={"/projects/suburbiq"} className={styles.projects__suburbiq__actionButtons}>
-                            READ MORE
-                        </Link>
-
-                        <Link href={"https://www.suburbiq.com"} className={styles.projects__suburbiq__actionButtons} target="_blank">
-                            VISIT{" "}
-                        </Link>
-                    </div>
                 </div>
             </div>
         </>
