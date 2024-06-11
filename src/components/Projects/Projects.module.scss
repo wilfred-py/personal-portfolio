@@ -14,118 +14,50 @@
     height: 100vh;
     max-width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 4fr 6fr 1fr;
-    grid-template-columns: 1fr 3fr 5fr 1fr;
-    grid-template-areas:
-        "leftpadding header header hambugerMenu"
-        "leftpadding number projectDescription rightPadding"
-        "leftpadding number projectDescription rightPadding"
-        "leftpadding footer footer rightPadding";
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
 
     overflow: hidden;
-    // background-color: #121211;
-    background-color: beige;
+    background-color: #121211;
+    // background-color: beige;
     border: 1px red solid;
+
+    &__title {
+        grid-area: 2 / 2 / 4 / 4;
+    }
 
     &__suburbiq {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-area: projectDescription;
+        grid-area: 4 / 2 / -2 / -2;
         margin-top: 1rem;
         z-index: 2;
 
         border: 1px green solid;
 
-        &__title {
-            h2 {
-                color: #cbcbc4;
-                font-size: 2rem;
-                font-weight: 800;
-            }
-
-            p {
-                color: #cecec5;
-                font-size: 1rem;
-                font-weight: 600;
-                margin-bottom: 0.5rem;
-            }
-
-            a:hover {
-                text-decoration: underline white;
-            }
+        &__3DCard {
+            display: grid;
+            grid-area: 8 / 2 / 1 / 4;
         }
 
         &__description {
+            grid-area: 5 / 14 / 20 / 24;
+
+            h2 {
+                color: #cecec5;
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
             p {
                 color: #cecec5;
                 font-size: 1rem;
                 font-weight: 600;
                 margin: 1rem 0rem;
             }
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                color: #cecec5;
-
-                li {
-                    margin: 0px 0.5rem;
-                }
-            }
         }
-
-        &__actionButtons {
-            max-width: 7rem;
-            text-align: center;
-            color: #cecec5;
-            font-size: 1rem;
-            font-weight: 600;
-            border: 1px solid #cecec5;
-            border-radius: 0.5rem;
-            padding: 0.25rem;
-        }
-
-        &__actionButtons:hover {
-            background-color: white;
-            color: black;
-        }
-    }
-
-    &__screenshots {
-        height: 100%;
-        max-width: 90%;
-        overflow: hidden;
-        border-radius: 1.2rem;
-
-        &__dashboard {
-            height: 80%;
-            margin-bottom: 10rem;
-            object-fit: cover;
-        }
-
-        &__search {
-            height: 80%;
-            object-fit: cover;
-        }
-    }
-
-    &__title {
-        border: 1px blue solid;
-        grid-area: header;
-        margin-top: 1rem;
-        color: white;
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    &__number {
-        display: grid;
-        grid-area: number;
-        color: yellow;
-        opacity: 0.65;
-        font-size: 14rem;
-        font-weight: 650;
-        z-index: 1;
     }
 }
