@@ -41,52 +41,17 @@ export default function Projects() {
                 <div className={styles.projects__title}>
                     <h1>PROJECTS</h1>
                 </div>
-                <div className={styles.projects__number}>1</div>
+
+                {/* <div className={styles.projects__number}>1</div> */}
 
                 <div className={styles.projects__suburbiq}>
-                    <div className={styles.projects__suburbiq__title}>
-                        <h2>Suburb IQ</h2>
-                        <p>
-                            {" "}
-                            <a href="https://www.suburbiq.com" target="_blank">
-                                https://www.suburbiq.com
-                            </a>
-                        </p>
-                    </div>
-                    <div className={styles.projects__suburbiq__description}>
-                        <p>A web app visualising demographic trends across Australian suburbs.</p>
-                        Technologies used:
-                        <ul>
-                            <li>NextJS</li>
-                            <li>Typescript</li>
-                            <li>Tailwind CSS</li>
-                            <li>Python</li>
-                            <li>Supabase</li>
-                            <li>Vercel</li>
-                        </ul>
-                    </div>
-
-                    <div className={styles.projects__screenshots}>
+                    <div className={styles.projects__suburbiq__3DCard}>
                         <SuburbIQHousingCard />
-                        {/* <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} /> */}
+                    </div>
 
-                        {/* <a href="https://www.suburbiq.com" target="_blank">
-                            <Image
-                                src={suburbiqDashboard}
-                                alt="Suburb IQ Dashboard Page"
-                                priority={true}
-                                className={styles.projects__screenshots__dashboard}
-                            />
-                        </a>
-
-                        <a href="https://www.suburbiq.com" target="_blank">
-                            <Image
-                                src={searchGif}
-                                alt="Suburb IQ Search Page"
-                                priority={true}
-                                className={styles.projects__screenshots__search}
-                            />
-                        </a> */}
+                    <div className={styles.projects__suburbiq__description}>
+                        <h2>SUBURB IQ</h2>
+                        <p>A web app visualising demographic trends across Australian suburbs.</p>
                     </div>
                 </div>
             </div>
