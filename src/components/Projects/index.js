@@ -66,13 +66,8 @@ export default function Projects() {
                         </ul>
                     </div>
 
-                    <div className="flex flex-row space-x-4">
-                        <div className="">
-                            <SuburbIQHousingCard />
-                        </div>
-                    </div>
-
                     <div className={styles.projects__screenshots}>
+                        <SuburbIQHousingCard />
                         {/* <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} /> */}
 
                         {/* <a href="https://www.suburbiq.com" target="_blank">
