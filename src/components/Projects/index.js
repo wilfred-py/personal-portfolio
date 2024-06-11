@@ -3,11 +3,7 @@ import styles from "./Projects.module.scss";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import transitionBlockImage from "@/public/images/transitionBlock.jpg";
-import suburbiqSearch from "@/public/images/suburbiqSearch.png";
-import suburbiqDashboard from "@/public/images/suburbiqDashboard.png";
-import searchGif from "@/public/images/suburbiqSearch.gif";
 import SuburbIQHousingCard from "./suburbiqHousingCard";
-import SuburbIQCard from "./suburbiqSearchGIFCard";
 
 import Link from "next/link";
 
@@ -70,16 +66,13 @@ export default function Projects() {
                         </ul>
                     </div>
 
-                    <div className={styles.projects__screenshots}>
-                        <div className="flex flex-row space-x-4">
-                            <div className="">
-                                <SuburbIQCard />
-                            </div>
-                            <div className="">
-                                <SuburbIQHousingCard />
-                            </div>
+                    <div className="flex flex-row space-x-4">
+                        <div className="">
+                            <SuburbIQHousingCard />
                         </div>
+                    </div>
 
+                    <div className={styles.projects__screenshots}>
                         {/* <Image src={searchGif} alt="Suburb IQ Search GIF" priority={true} className={styles.projects__screenshots} /> */}
 
                         {/* <a href="https://www.suburbiq.com" target="_blank">
