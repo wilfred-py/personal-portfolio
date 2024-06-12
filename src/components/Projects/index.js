@@ -42,8 +42,6 @@ export default function Projects() {
                     <h1>PROJECTS</h1>
                 </div>
 
-                {/* <div className={styles.projects__number}>1</div> */}
-
                 <div className={styles.projects__suburbiq}>
                     <div className={styles.projects__suburbiq__3DCard}>
                         <SuburbIQHousingCard />
@@ -51,7 +49,7 @@ export default function Projects() {
 
                     <div className={styles.projects__suburbiq__description}>
                         <h2>SUBURB IQ</h2>
-                        <p>A web app visualising demographic trends across Australian suburbs.</p>
+                        <p>Providing investors with socioeconomic data trends over the last two decades. </p>
                     </div>
                 </div>
             </div>
