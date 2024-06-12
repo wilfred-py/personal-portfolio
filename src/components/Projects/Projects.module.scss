@@ -25,6 +25,9 @@
     border: 1px red solid;
 
     &__title {
+        font-size: 5rem;
+        color: #cecec5;
+        font-weight: 750;
         grid-area: 2 / 2 / 4 / 4;
     }
 
@@ -33,18 +36,14 @@
         height: 100%;
         display: grid;
         grid-area: 4 / 2 / -2 / -2;
-        margin-top: 1rem;
-        z-index: 2;
-
         border: 1px green solid;
 
         &__3DCard {
-            display: grid;
-            grid-area: 8 / 2 / 1 / 4;
+            grid-area: 7 / 3 / 22 / 13;
         }
 
         &__description {
-            grid-area: 5 / 14 / 20 / 24;
+            grid-area: 7 / 14 / 20 / 24;
 
             h2 {
                 color: #cecec5;
